@@ -1,0 +1,8 @@
+2015-11-15
+
+HTML in JS: A Justification
+- he makes a number of good points justifying the seeming "mixing of concerns" in that other frameworks essentially put JS in HTML but React does the reverse, the benefit being that errors are easier to spot and fix, since JS is less tolerant of errors and when an error occurs, it's explicit about where the error occurs.
+
+-installed Babel and Babel snippets packages for sublime
+
+Virtual DOM
