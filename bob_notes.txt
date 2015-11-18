@@ -1,3 +1,9 @@
+2015-11-16
+- was able to sort out why the header wasn't rendering after adding the about section
+  - had forgotten to take out the render statement at the end of main.js
+  - figured it out because no matter what I did to the App class in main.js, it still rendered the Home, effectively ignoring the App class
+  - once the render statement was removed, all worked as expected
+
 2015-11-15
 
 HTML in JS: A Justification
