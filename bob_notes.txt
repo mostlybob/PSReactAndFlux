@@ -1,6 +1,12 @@
 2015-11-28
 - still having trouble with the Authors page rendering
   - console complains about Authors.render() not returning a valid ReactComponent, but I'm having a hard time finding it
+- authorApi at http://bit.ly/authorapi
+- got Authors to render by rerunning the video & retyping the code; I might go & look at the diff later
+	- commit id e82c9b3
+- finished Demo: Controller Views
+
+- started on React Composition
 
 2015-11-22
 - reviewing: Demo: Simple Routing
