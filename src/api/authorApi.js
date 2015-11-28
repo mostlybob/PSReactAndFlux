@@ -34,7 +34,7 @@ var AuthorApi = {
 			// just simulating creation here
 			//server would generate ids for the new author in real
 			//cloning, so copy returned is passed by value
-			author.id = _._generateId(author);
+			author.id = _._generatedId(author);
 			authors.push(author);
 		}
 

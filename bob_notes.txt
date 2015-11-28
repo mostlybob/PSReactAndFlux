@@ -1,3 +1,7 @@
+2015-11-28
+- still having trouble with the Authors page rendering
+  - console complains about Authors.render() not returning a valid ReactComponent, but I'm having a hard time finding it
+
 2015-11-22
 - reviewing: Demo: Simple Routing
   - immediately invoked function expression (IIFE - "iffy")

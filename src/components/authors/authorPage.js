@@ -6,41 +6,42 @@ var React = require('react');
 var AuthorApi = require('../../api/authorApi');
 
 var Authors = React.createClass({
-	getInitialState: function(){
+
+	getInitialState: function() {
 		return {
 			authors: []
 		};
 	},
 
-	componentWillMount: function(){
+	componentWillMount: function() {
 		this.setState({ authors: AuthorApi.getAllAuthors() });
-		/*
-		To keep it simple, this is a synchronous call, since it
-		is only calling to the local mocked API and will return
-		instantaneously. In a real-world app, an async call using
-		callbacks or promises etc.
-		*/
 	},
 
-	render: function(){
+	render: function() {
 		var createAuthorRow = function(author) {
-			
 			return (
-				<div>
-					<h1>Authors</h1>
-					// <table className="table">
-					// 	<thead>
-					// 		<th>ID</th>
-					// 		<th>Name</th>
-					// 	</thead>
-					// 	<tbody>
-					// 		{this.state.authors.map(createAuthorRow, this)}
-					// 	</tbody>
-					// </table>
-				</div>
+				<tr key={author.id}>
+					<td><a href={"/#authors/" + author.id}>{author.id}</a></td>
+					<td>{author.firstName} {author.lastName}</td>
+				</tr>
 			);
 		};
-	}
+
+		return (
+			<div>
+				<h1>Authors</h1>
+				<table className="table">
+					<thead>
+						<th>ID</th>
+						<th>Name</th>
+					</thead>
+					<tbody>
+						{this.state.authors.map(createAuthorRow, this)}	
+					</tbody>
+				</table>
+			</div>
+		);
+	}	
 });
 
 module.exports = Authors;
