@@ -63,16 +63,16 @@ gulp.task('css',function(){
 	gulp.src(config.paths.css)
 	.pipe(concat('bundle.css'))
 	.pipe(gulp.dest(config.paths.dist + '/css'));
-
-	//favicon
-	gulp.src('./src/favicon.ico')
-	.pipe(gulp.dest(config.paths.dist));
 });
 
 gulp.task('images', function() {
 	gulp.src(config.paths.images)
 	.pipe(gulp.dest(config.paths.dist + '/images'))
 	.pipe(connect.reload());
+
+	//favicon
+	gulp.src('./src/favicon.ico')
+	.pipe(gulp.dest(config.paths.dist));
 });
 
 gulp.task('lint', function(){
@@ -86,4 +86,4 @@ gulp.task('watch',function(){
 	gulp.watch(config.paths.js, ['js', 'lint']);
 });
 
-gulp.task('default',['html','js','css', 'lint', 'open','watch']);
+gulp.task('default',['html', 'js', 'css', 'images', 'lint', 'open','watch']);

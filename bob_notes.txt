@@ -1,3 +1,7 @@
+2015-11-22
+- reviewing: Demo: Simple Routing
+  - immediately invoked function expression (IIFE - "iffy")
+
 2015-11-16
 - was able to sort out why the header wasn't rendering after adding the about section
   - had forgotten to take out the render statement at the end of main.js

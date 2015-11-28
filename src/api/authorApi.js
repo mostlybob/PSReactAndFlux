@@ -8,7 +8,7 @@ var _ = require('lodash');
 
 // This would be peformed on teh server in a real app. Just a stub for now.
 var _generatedId = function (author){
-	return author.firstName.toLowerCase() + '-'
+	return author.firstName.toLowerCase() + '-';
 };
 
 var _clone = function(item){

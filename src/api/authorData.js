@@ -9,7 +9,7 @@ module.exports = {
 			lastName: 'House'
 		},
 		{
-			id: 'scott-allen'
+			id: 'scott-allen',
 			firstName: 'Scott',
 			lastName: 'Allen'
 		},
@@ -17,6 +17,6 @@ module.exports = {
 			id: 'dan-wahlin',
 			firstName: 'Dan',
 			lastName: 'Wahlin'
-		},
+		}
 	]
 };

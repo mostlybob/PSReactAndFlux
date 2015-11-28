@@ -2,10 +2,12 @@
 $ = jQuery = require('jquery');
 var React = require('react');
 var Home = require('./components/homePage');
+var Authors = require('./components/authors/authorPage');
 var About = require('./components/about/aboutPage');
 var Header = require('./components/common/header');
 
-(function (win) {
+// this is an example of an immediately invoked function expression - iife
+(function (win) {		//parameter is supplied as argument to iife below
 	"use strict";
 
 	var App = React.createClass({
@@ -14,6 +16,7 @@ var Header = require('./components/common/header');
 
 			switch(this.props.route){
 				case 'about': Child = About; break;
+				case 'authors': Child = Authors; break;
 				default: Child = Home;
 			}
 
@@ -33,4 +36,4 @@ var Header = require('./components/common/header');
 
 	win.addEventListener('hashchange', render);
 	render();
-})(window);
+})(window);		//this is the parm passed to the iffe
