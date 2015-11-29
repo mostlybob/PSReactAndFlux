@@ -1,3 +1,9 @@
+2015-11-29
+- starting with Prop Validation
+- interesting comment about only running in Dev version, not prod & that minified is prod
+- Demo: Prop Validation
+- Mixins
+
 2015-11-28
 - still having trouble with the Authors page rendering
   - console complains about Authors.render() not returning a valid ReactComponent, but I'm having a hard time finding it
