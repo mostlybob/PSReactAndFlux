@@ -3,6 +3,28 @@
 - interesting comment about only running in Dev version, not prod & that minified is prod
 - Demo: Prop Validation
 - Mixins
+- React Router
+  - Nested views to route nested routes
+  - Declarative
+  - used by FB
+  - inspired by Ember
+- Route Configuration
+  - Route - Declaratively map a route
+  - DefaultRoute - For URL of "/". Like "index.html"
+  - NotFoundRoute - Client-side 404
+  - Redirect - redirect to another route
+- Demo: Route Configuration	
+- Demo: Bootstrapping
+  - interesting comment about using a directive instead of "use strict" to suspend linting: /*eslint-disable strict*/
+  - some trouble with the defined routes; his are fine, but mine are complaining about not being able to find the author & about components:
+  { [Error: Cannot find module './components/authorPage' from '/home/bob/workspace/react/coryhouse_ps/src']
+  stream: 
+		...
+
+	- it looks like the additional path specifier is missing 
+	- yep, I goofed the routes.js file & omitted the path to components
+	- fixed linting errors, but still doesn't show
+	  - JS console is showing a couple of errors
 
 2015-11-28
 - still having trouble with the Authors page rendering
