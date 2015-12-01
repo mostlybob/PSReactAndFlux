@@ -4,6 +4,7 @@
   - Warning: React.createElement: type should not be null or undefined. It should be a string (for DOM elements) or a ReactClass (for composite components).
   - Warning: Only functions or strings can be mounted as React components.
 - found it: a typo in the RouteHandler declaration in app.js
+- started Params and Querystrings
 
 ## 2015-11-29
 - starting with Prop Validation
