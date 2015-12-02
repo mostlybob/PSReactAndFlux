@@ -1,3 +1,37 @@
+## 2015-12-2
+- Params & Querystrings
+- at first bounce it's a little confusing, but I think I get it
+  - it'l take some practice
+  - here's his example:
+  ```javascript
+  // Given a route like this:
+  <route path="/course/:courseId" handler={Course} />
+
+  // and a URL like this:
+  '/course/clean-code?module=3'
+
+  // the component's props will be populated
+  var Course = React.createClass({
+  	render: function() {
+  		this.props.params.courseId;	// "clean-code"
+  		this.props.query.module;		// "3"
+  		this.prop.path;							// "/course/clean-code?module=3"
+  	}
+  });
+  
+  ```
+  - what's a little confusing to me is the notation of the route
+  	- "/course/:courseId"
+  	- his example uses a url like "/couse/clean-code?module=3"
+  	- another example later uses a url like "/user/1"
+  		- I recognize this a REST-style URL, but his route looks the same
+  			- i.e. the above example could be "/course/3" and it would look for course id 3, I think
+  		- I'm guessing this will make more sense later
+- Demo: Links
+	- ooh, nice idea about normalizing references to hyperlinks
+		- keep the actual path in one place & use the refernces in the actual code; makes maintenance easier
+	- the routes are already defined in route.js, the Link element is just using them
+
 ## 2015-12-1
 - trying to sort out why page won't show
 - console shows a couple of warnings
