@@ -1,7 +1,12 @@
+## 2015-12-03
+- Demo: Links (cont'd)
+  - demos how one declaration of the "about" route can be used in multiple areas
+
+
 ## 2015-12-2
 - Params & Querystrings
 - at first bounce it's a little confusing, but I think I get it
-  - it'l take some practice
+  - it'll take some practice
   - here's his example:
   ```javascript
   // Given a route like this:
