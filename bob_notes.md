@@ -10,7 +10,8 @@
   - examples of use:
     - willTransitionTo: verify user is logged in
     - willTransitionFrom: check if there is unsaved form data
-  - completed example of willTransitionTo; next is willTranstionFrom
+  - completed example of willTransitionTo
+  - willTranstionFrom
 
 ## 2015-12-03
 - Demo: Links (cont'd)
