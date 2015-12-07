@@ -12,6 +12,17 @@
     - willTransitionFrom: check if there is unsaved form data
   - completed example of willTransitionTo
   - willTranstionFrom
+- Demo: Locations
+  - note the differences between Hash Location & History Location styles of routing & effect on URLs
+  - Hash Location
+    - e.g. yourUrl.com#/courses
+    - wider support (for older browsers)
+  - History Location
+    - e.g. yourUrl.com/courses
+    - cleaner
+    - HTML5-maintained stack; accessible via API: push state, replace state, pop state
+    - not supported in IE 8, 9, Opera Mini, older stock Android browsers
+    - isomorphic JS (server side JS rendering) can only be done using this style
 
 ## 2015-12-03
 - Demo: Links (cont'd)
