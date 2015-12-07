@@ -3,7 +3,14 @@
   - gives ability to retire old links as application matures
   - handle common typos in URLs
   - redirect requests into a non-existent (or locked) virtual directory using wild cards
-
+- Transitions
+  - willTransitionTo - determine if page should be transitioned to
+  - willTransitionFrom - runs checks before use navigates away
+  - occurs on client side using React Router
+  - examples of use:
+    - willTransitionTo: verify user is logged in
+    - willTransitionFrom: check if there is unsaved form data
+  - completed example of willTransitionTo; next is willTranstionFrom
 
 ## 2015-12-03
 - Demo: Links (cont'd)
