@@ -1,7 +1,15 @@
+## 2015-12-07
+- Redirects
+  - gives ability to retire old links as application matures
+  - handle common typos in URLs
+  - redirect requests into a non-existent (or locked) virtual directory using wild cards
+
+
 ## 2015-12-03
 - Demo: Links (cont'd)
   - demos how one declaration of the "about" route can be used in multiple areas
-
+- Demo: NotFoundRoute
+  - define a 404
 
 ## 2015-12-2
 - Params & Querystrings
@@ -10,10 +18,10 @@
   - here's his example:
   ```javascript
   // Given a route like this:
-  <route path="/course/:courseId" handler={Course} />
+  //<route path="/course/:courseId" handler={Course} />
 
   // and a URL like this:
-  '/course/clean-code?module=3'
+  //'/course/clean-code?module=3'
 
   // the component's props will be populated
   var Course = React.createClass({
