@@ -1,3 +1,9 @@
+## 2015-12-08
+- Demo: Locations
+  - using ```HistoryLocation``` adds some load to the server and is limited/no support for older browsers
+    - Cory has other things to say about the plumbing overhead it introduces
+  - I'll check in the change that implements it in ```main.js``` but Cory pulls it out to keep the site simple
+
 ## 2015-12-07
 - Redirects
   - gives ability to retire old links as application matures
