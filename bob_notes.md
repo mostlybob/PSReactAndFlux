@@ -3,6 +3,22 @@
   - using ```HistoryLocation``` adds some load to the server and is limited/no support for older browsers
     - Cory has other things to say about the plumbing overhead it introduces
   - I'll check in the change that implements it in ```main.js``` but Cory pulls it out to keep the site simple
+    - commit ```6279f54```
+
+- Mixins
+  - for cross-cutting concerns
+  - share code between multiple components
+  - Navigation Mixin
+
+- React Forms
+  - Validation
+  - Redirects
+  - Reusable inputs
+  - User notifications
+  - Saving & Population on load
+
+- Create Manage Authors Page
+  
 
 ## 2015-12-07
 - Redirects
