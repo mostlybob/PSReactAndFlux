@@ -18,7 +18,8 @@
   - Saving & Population on load
 
 - Create Manage Authors Page
-  
+
+- switched to ssh git (cloned to a new local folder)  
 
 ## 2015-12-07
 - Redirects
