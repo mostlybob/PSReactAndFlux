@@ -1,3 +1,22 @@
+## 2015-12-16
+- Build Controller View cont'd
+  - getting error - ```Adjacent JSX elements must be wrapped in an enclosing tag while parsing file: /home/bob/workspace/react/PSReactAndFlux/src/components/authors/manageAuthorPage.js```  at the line that corresponds to the addition of the <AuthorForm />
+    - seems the ```<h1>Manage Author</h1>``` is the problem; take it out and everything goes right
+    - tried ```<p></p>```, ```<div></div>``` and ```<span></span>`, all with the same result
+    - tried unmarked up text, got a different error
+    - I will continue with the ```<h1></h1>``` and see what happens
+  - after entering the html for the form, he checked the console to see this error
+    - he addressed it by removing the ```<h1></h1>``` from the top level where the ```<AuthorForm/>``` element was located
+    - basically what I discovered on my own :)
+    - he did say he could wrap the ```<h1></h1>``` and ```<AuthorForm />``` in a div, but it didn't seem to work when I tried that
+
+## 2015-12-15
+- review forms
+- Build Controller View
+  - top level component can have smarts (marshal data, validation etc), but ought not have a lot of the actual markup
+  - controller views provide a means of separating that away, allowing top component to pass data down to be rendered out by the child components
+
+
 ## 2015-12-08
 - Demo: Locations
   - using ```HistoryLocation``` adds some load to the server and is limited/no support for older browsers
